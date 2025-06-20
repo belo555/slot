@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPIN707 : Situs Slot Online Andalan Dan Terpercaya Dengan Layanan Berkualitas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #1e40af, #1e3a8a);
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background: linear-gradient(135deg, #10b981, #059669);
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background: linear-gradient(135deg, #059669, #047857);
+            transform: translateY(-2px);
+        }
+        .game-card {
+            transition: all 0.3s ease;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .marquee {
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 15s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+        .result-card {
+            background: linear-gradient(135deg, #2b5876, #4e4376);
+        }
+        .blink {
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Top Banner -->
+    <div class="gradient-bg py-2 px-4 text-center text-sm font-bold">
+        <div class="marquee">
+            <span>SPIN707 BO ANDALANMU! | BONUS ROLLINGAN SETIAP HARINYA | TERIMA PEMBAYARAN QRIS | GARANSI KEKALAHAN 100%</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-black py-4 px-6 flex flex-col md:flex-row items-center justify-between">
+        <div class="flex items-center mb-4 md:mb-0">
+            <a href="https://thinomenon.com/" class="mr-4">
+                <img src="https://thinomenon.com/images/logoweb.png" alt="SPIN707 Logo" class="h-12">
+            </a>
+            <div class="hidden md:flex space-x-4">
+                <a href="https://thinomenon.com/" class="flex items-center text-yellow-400 hover:text-white">
+                    <i class="fas fa-home mr-1"></i> BERANDA
+                </a>
+                <a href="https://thinomenon.com/m/promosi.php" class="flex items-center text-yellow-400 hover:text-white">
+                    <i class="fas fa-gift mr-1"></i> PROMOSI
+                </a>
+                <a href="https://thinomenon.com/m/event.php" class="flex items-center text-yellow-400 hover:text-white">
+                    <i class="fas fa-calendar-alt mr-1"></i> EVENT
+                </a>
+            </div>
+        </div>
+        
+        <div class="flex items-center space-x-4">
+            <a href="https://wa.me/6281324077142" class="bg-green-600 hover:bg-green-700 px-3 py-2 rounded flex items-center">
+                <i class="fab fa-whatsapp mr-1"></i> WHATSAPP
+            </a>
+            <a href="https://secure.livechatenterprise.com/licence/13490469/v2/open_chat.cgi" class="bg-blue-600 hover:bg-blue-700 px-3 py-2 rounded flex items-center">
+                <i class="fas fa-comment-dots mr-1"></i> LIVECHAT
+            </a>
+            <div class="hidden md:flex space-x-2">
+                <a href="https://thinomenon.com/?desktop" class="bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded">Desktop</a>
+                <a href="https://thinomenon.com/wap/index.php" class="bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded">Wap</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Login/Register Modal -->
+    <div id="authModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-gray-800 rounded-lg max-w-md w-full p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-white">Masuk ke SPIN707</h3>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-white">&times;</button>
+            </div>
+            
+            <form id="loginForm" class="space-y-4">
+                <div>
+                    <label for="username" class="block text-sm font-medium text-gray-300 mb-1">Username</label>
+                    <input type="text" id="username" name="username" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                </div>
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-300 mb-1">Password</label>
+                    <input type="password" id="password" name="password" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                </div>
+                <button type="submit" class="w-full btn-primary py-2 px-4 rounded-md font-medium">Masuk</button>
+                <p class="text-sm text-gray-400 text-center">Belum punya akun? <a href="#" onclick="showRegister()" class="text-blue-400 hover:underline">Daftar disini</a></p>
+            </form>
+
+            <form id="registerForm" class="space-y-4 hidden">
+                <div>
+                    <label for="regUsername" class="block text-sm font-medium text-gray-300 mb-1">Username</label>
+                    <input type="text" id="regUsername" name="username" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                </div>
+                <div>
+                    <label for="regPassword" class="block text-sm font-medium text-gray-300 mb-1">Password</label>
+                    <input type="password" id="regPassword" name="password" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                </div>
+                <div>
+                    <label for="confirmPassword" class="block text-sm font-medium text-gray-300 mb-1">Konfirmasi Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+                </div>
+                <button type="submit" class="w-full btn-secondary py-2 px-4 rounded-md font-medium">Daftar</button>
+                <p class="text-sm text-gray-400 text-center">Sudah punya akun? <a href="#" onclick="showLogin()" class="text-blue-400 hover:underline">Masuk disini</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login/Register Section -->
+    <div class="bg-gray-800 py-6 px-6 text-center">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="mb-4 md:mb-0">
+                <h1 class="text-2xl md:text-3xl font-bold text-blue-400">SPIN707</h1>
+                <p class="text-sm text-gray-300">Situs Slot Online Andalan Dan Terpercaya Dengan Layanan Berkualitas</p>
+            </div>
+            <div class="flex space-x-4">
+                <button onclick="showLogin()" class="btn-primary px-6 py-2 rounded font-bold">Masuk</button>
+                <button onclick="showRegister()" class="btn-secondary px-6 py-2 rounded font-bold">Daftar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="bg-gray-800 py-2 px-4 sticky top-0 z-10 shadow-lg">
+        <div class="max-w-7xl mx-auto">
+            <div class="hidden md:flex justify-between">
+                <a href="https://thinomenon.com/?content=register" class="px-3 py-2 hover:bg-gray-700 rounded">TOGEL</a>
+                <a href="https://thinomenon.com/?content=slot" class="px-3 py-2 hover:bg-gray-700 rounded">SLOT</a>
+                <a href="https://thinomenon.com/?content=casino" class="px-3 py-2 hover:bg-gray-700 rounded">LIVE CASINO</a>
+                <a href="https://thinomenon.com/?content=sport" class="px-3 py-2 hover:bg-gray-700 rounded">SPORT</a>
+                <a href="https://thinomenon.com/?content=fish" class="px-3 py-2 hover:bg-gray-700 rounded">ARCADE</a>
+                <a href="https://thinomenon.com/?content=sabung" class="px-3 py-2 hover:bg-gray-700 rounded">SABUNG</a>
+                <a href="https://thinomenon.com/?content=interactive" class="px-3 py-2 hover:bg-gray-700 rounded">INTERACTIVE</a>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="md:hidden grid grid-cols-3 gap-2">
+                <a href="https://thinomenon.com/#togel-mobile" class="bg-gray-700 hover:bg-gray-600 p-2 rounded text-center text-sm flex flex-col items-center">
+                    <img src="https://img.viva88athenae.com//icon-togel.png" class="h-8 mb-1">
+                    <span>TOGEL</span>
+                </a>
+                <a href="#" class="bg-gray-700 hover:bg-gray-600 p-2 rounded text-center text-sm flex flex-col items-center">
+                    <img src="https://img.viva88athenae.com//icon-slot.png" class="h-8 mb-1">
+                    <span>SLOT</span>
+                </a>
+                <a href="#" class="bg-gray-700 hover:bg-gray-600 p-2 rounded text-center text-sm flex flex-col items-center">
+                    <img src="https://img.viva88athenae.com//icon-live.png" class="h-8 mb-1">
+                    <span>LIVE CASINO</span>
+                </a>
+                <a href="#" class="bg-gray-700 hover:bg-gray-600 p-2 rounded text-center text-sm flex flex-col items-center">
+                    <img src="https://img.viva88athenae.com//icon-sport.png" class="h-8 mb-1">
+                    <span>SPORT</span>
+                </a>
+                <a href="#" class="bg-gray-700 hover:bg-gray-600 p-2 rounded text-center text-sm flex flex-col items-center">
+                    <img src="https://img.viva88athenae.com//icon-fishing.png" class="h-8 mb-1">
+                    <span>ARCADE</span>
+                </a>
+                <a href="#" class="bg-gray-700 hover:bg-gray-600 p-2 rounded text-center text-sm flex flex-col items-center">
+                    <img src="https://img.viva88athenae.com//icon-sabung.png" class="h-8 mb-1">
+                    <span>SABUNG</span>
+                </a>
+                <a href="#" class="bg-gray-700 hover:bg-gray-600 p-2 rounded text-center text-sm flex flex-col items-center">
+                    <img src="https://img.viva88athenae.com//icon-interactive.png" class="h-8 mb-1">
+                    <span>INTERACTIVE</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-6">
+        <!-- Slider/Banner -->
+        <div class="mb-8 rounded-lg overflow-hidden">
+            <img src="https://thinomenon.com/images/upload-Slides-20240827164802.jpg" alt="Promo Banner" class="w-full h-auto">
+        </div>
+
+        <!-- Game Providers -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-yellow-400 border-b border-yellow-400 pb-2">SLOT GAME PROVIDERS</h2>
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
+                <!-- Pragmatic Play -->
+                <a href="https://thinomenon.com/?content=slot&provider=pp" class="game-card bg-gray-800 rounded-lg p-3 flex flex-col items-center hover:bg-gray-700">
+                    <img src="https://img.viva88athenae.com//slot-prag.png" alt="Pragmatic Play" class="h-12 mb-2">
+                    <span class="text-sm text-center">PRAGMATIC PLAY</span>
+                </a>
+                
+                <!-- PG SOFT -->
+                <a href="https://thinomenon.com/?content=slot&provider=pg" class="game-card bg-gray-800 rounded-lg p-3 flex flex-col items-center hover:bg-gray-700">
+                    <img src="https://img.viva88athenae.com//slot-pg.png" alt="PG SOFT" class="h-12 mb-2">
+                    <span class="text-sm text-center">PG SOFT</span>
+                </a>
+                
+                <!-- HABANERO -->
+                <a href="https://thinomenon.com/?content=slot&provider=hb" class="game-card bg-gray-800 rounded-lg p-3 flex flex-col items-center hover:bg-gray-700">
+                    <img src="https://img.viva88athenae.com//slot-hab.png" alt="HABANERO" class="h-12 mb-2">
+                    <span class="text-sm text-center">HABANERO</span>
+                </a>
+                
+                <!-- JILI -->
+                <a href="https://thinomenon.com/?content=slot&provider=jl" class="game-card bg-gray-800 rounded-lg p-3 flex flex-col items-center hover:bg-gray-700">
+                    <img src="https://img.viva88athenae.com//slot-jl.png" alt="JILI" class="h-12 mb-2">
+                    <span class="text-sm text-center">JILI</span>
+                </a>
+                
+                <!-- SPADEGAMING -->
+                <a href="https://thinomenon.com/?content=slot&provider=sg" class="game-card bg-gray-800 rounded-lg p-3 flex flex-col items-center hover:bg-gray-700">
+                    <img src="https://img.viva88athenae.com//slot-spad.png" alt="SPADEGAMING" class="h-12 mb-2">
+                    <span class="text-sm text-center">SPADEGAMING</span>
+                </a>
+                
+                <!-- NEXTSPIN -->
+                <a href="https://thinomenon.com/?content=slot&provider=nxt" class="game-card bg-gray-800 rounded-lg p-3 flex flex-col items-center hover:bg-gray-700">
+                    <img src="https://img.viva88athenae.com//slot-nxt.png" alt="NEXTSPIN" class="h-12 mb-2">
+                    <span class="text-sm text-center">NEXTSPIN</span>
+                </a>
+                
+                <!-- 5G GAMES -->
+                <a href="https://thinomenon.com/?content=slot&provider=fgs" class="game-card bg-gray-800 rounded-lg p-3 flex flex-col items-center hover:bg-gray-700">
+                    <img src="https://img.viva88athenae.com//slot-fgs.png" alt="5G GAMES" class="h-12 mb-2">
+                    <span class="text-sm text-center">5G GAMES</span>
+                </a>
+                
+                <!-- JOKER -->
+                <a href="https://thinomenon.com/?content=slot&provider=jg" class="game-card bg-gray-800 rounded-lg p-3 flex flex-col items-center hover:bg-gray-700">
+                    <img src="https://img.viva88athenae.com//slot-jok.png" alt="JOKER" class="h-12 mb-2">
+                    <span class="text-sm text-center">JOKER</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Live Casino Providers -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-yellow-400 border-b border-yellow-400 pb-2">LIVE CASINO PROVIDERS</h2>
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
+                <!-- PRAGMATIC PLAY -->
+                <a href="https://thinomenon.com/?content=casino&provider=pplc" class="game-card bg-gray-800 rounded-lg p-3 flex flex-col items-center hover:bg-gray-700">
+                    <img src="https://img.viva88athenae.com//live-pp.png" alt="PRAGMATIC PLAY" class="h-12 mb-2">
+                    <span class="text-sm text-center">PRAGMATIC PLAY</span>
+                </a>
+                
+                <!-- EVOLUTION -->
+                <a href="https://thinomenon.com/?content=casino&provider=evo" class="game-card bg-gray-800 rounded-lg p-3 flex flex-col items-center hover:bg-gray-700">
+                    <img src="https://img.viva88athenae.com//live-evo.png" alt="EVOLUTION" class="h-12 mb-2">
+                    <span class="text-sm text-center">EVOLUTION</span>
+                </a>
+                
+                <!-- MICROGAMING -->
+                <a href="https://thinomenon.com/?content=casino&provider=mg" class="game-card bg-gray-800 rounded-lg p-3 flex flex-col items-center hover:bg-gray-700">
+                    <img src="https://img.viva88athenae.com//live-mg.png" alt="MICROGAMING" class="h-12 mb-2">
+                    <span class="text-sm text-center">MICROGAMING</span>
+                </a>
+                
+                <!-- ION CASINO -->
+                <a href="https://thinomenon.com/?content=casino&provider=ion" class="game-card bg-gray-800 rounded-lg p-3 flex flex-col items-center hover:bg-gray-700">
+                    <img src="https://img.viva88athenae.com//live-ion.png" alt="ION CASINO" class="h-12 mb-2">
+                    <span class="text-sm text-center">ION CASINO</span>
+                </a>
+                
+                <!-- SEXY GAMING -->
+                <a href="https://thinomenon.com/?content=casino&provider=sx" class="game-card bg-gray-800 rounded-lg p-3 flex flex-col items-center hover:bg-gray-700">
+                    <img src="https://img.viva88athenae.com//live-sg.png" alt="SEXY GAMING" class="h-12 mb-2">
+                    <span class="text-sm text-center">SEXY GAMING</span>
+                </a>
+                
+                <!-- SA GAMING -->
+                <a href="https://thinomenon.com/?content=casino&provider=sa" class="game-card bg-gray-800 rounded-lg p-3 flex flex-col items-center hover:bg-gray-700">
+                    <img src="https://img.viva88athenae.com//live-sagaming.png" alt="SA GAMING" class="h-12 mb-2">
+                    <span class="text-sm text-center">SA GAMING</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Togel Results -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-yellow-400 border-b border-yellow-400 pb-2">TOGEL RESULT</h2>
+            <div class="bg-gray-800 rounded-lg p-4">
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 mb-4">
+                    <a href="https://thinomenon.com/?content=hasil&pid=HKD" class="result-card rounded-lg p-2 text-center hover:bg-opacity-90">
+                        <div class="font-bold">HK SIANG</div>
+                        <div class="text-xl font-bold text-yellow-400">7989</div>
+                        <div class="text-xs">KAMIS 19/6/2025</div>
+                    </a>
+                    <a href="https://thinomenon.com/?content=hasil&pid=SGM" class="result-card rounded-lg p-2 text-center hover:bg-opacity-90">
+                        <div class="font-bold">SG METRO</div>
+                        <div class="text-xl font-bold text-yellow-400">6764</div>
+                        <div class="text-xs">KAMIS 19/6/2025</div>
+                    </a>
+                    <a href="https://thinomenon.com/?content=hasil&pid=SY" class="result-card rounded-lg p-2 text-center hover:bg-opacity-90">
+                        <div class="font-bold">SYDNEY</div>
+                        <div class="text-xl font-bold text-yellow-400">2328</div>
+                        <div class=
